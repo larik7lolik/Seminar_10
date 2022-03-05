@@ -24,17 +24,17 @@ for (int i = 0; i < result.Length; i++);
 }
 
 Console.WriteLine();
-int summ = 0;
+
 count = 0;
 
 for (int i = 0; i < result.Length; i++);
 {
-    summ = 0;
     for (int j = 0; j < info[i]; j++)
     {
        //Console.Write(data[count + j]);
-       summ += data[count + j] * (int)Math.Pow(2, info[i] - j -1);
+       result[i] += data[count + j] * (int)Math.Pow(2, info[i] - j -1);
     }
     count += info[i];
-    Console.Write(summ + " ");
+    Console.Write(result[i] + " ");
 }
+Console.WriteLine();
